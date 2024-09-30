@@ -15,11 +15,11 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*', 'sanctum/csrf-cookie', 'api/csrf-cookie','csrf-token', 'admin/*'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://admin.ticketdropgame.click','https://ticketdropgame.click','https://api.ticketdropgame.click','http://localhost:5174','http://127.0.0.1:5174'],
 
     'allowed_origins_patterns' => [],
 
@@ -29,6 +29,5 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
-
+    'supports_credentials' => true,
 ];

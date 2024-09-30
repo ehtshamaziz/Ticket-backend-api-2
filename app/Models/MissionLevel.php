@@ -9,6 +9,12 @@ class MissionLevel extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'level',
+        'cost',
+        'production_per_hour',
+        'mission_id', 
+    ];
 
     public function mission()
     {
